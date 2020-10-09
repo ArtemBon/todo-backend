@@ -1,24 +1,20 @@
-# README
+Для запуска проекта должна быть установлена версия руби 2.7.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Склонируте проект и в папке проекта выполните
 
-Things you may want to cover:
+```sh
+bundle install --without production
+```
 
-* Ruby version
+А затем
 
-* System dependencies
+```sh
+rails db:migrate
+```
+После этого
 
-* Configuration
+```sh
+rails s -p 3001
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+(это запустит приложение на http://localhost:3001)
